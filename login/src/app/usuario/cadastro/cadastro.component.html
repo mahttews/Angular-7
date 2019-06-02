@@ -1,0 +1,23 @@
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-9">
+      <div class="jumbotron sombra">
+        <h1 class="display-3 ">Cadastro de Usuário</h1>
+        <br>
+        <div class="col-3"></div>
+        <div class="row">
+          <div class="form-group col col-12">
+            <label for="usuario">Usuário</label>
+            <input [(ngModel)]="usuario.nome" id="usuario" type="text" class="validate" class="form-control">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group col col-12">
+            <label for="senha">Senha</label>
+            <input [(ngModel)]="usuario.senha" id="senha" type="password" class="form-control">
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit" name="action" (click)="cadastrarUsuario()">CADASTRAR</button>
+      </div>
+    </div>
+  </div>
